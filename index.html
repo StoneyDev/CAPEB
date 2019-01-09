@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:og="http://ogp.me/ns#">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Représenter, Défendre, Promouvoir l’Artisanat du bâtiment."/>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+        <meta name="apple-itunes-app" content="app-id=971652081">
+
+        <meta property="og:type" content="website"/>
+        <meta property="og:site_name" content="CAPEB"/>
+        <meta property="og:title" content="CAPEB - Application YD"/>
+        <meta property="og:url" content="https://www.capeb71.fr/"/>
+        <meta property="og:description" content="Représenter, Défendre, Promouvoir l’Artisanat du bâtiment."/>
+        <meta property="og:locale" content="fr_FR"/>
+        <meta property="og:image" content="http://miw.yannderoues.com/3/img/logo_capeb.png" />
+
+        <title>CAPEB - Yann DEROUES</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css" id="colorCSS">
+    </head>
+
+    <body>
+        <header class="bg-section-1 vh-md-100">
+            <div class="container h-100">
+                <div class="row align-items-center h-100 py-5">
+                    <div class="col-md">
+                        <img src="img/logo_capeb.png" alt="Logo CAPEB" class="img-fluid">
+                        <p class="my-5">Pour votre iPhone ou Android, la CAPEB est plus proche de vous à présent: actualités, formations, boites à outils, notifications, etc.</p>
+                        <div class="row text-center text-md-left">
+                            <div class="col-12 col-md-4">
+                                <a href="https://play.google.com/store/apps/details?id=com.websenso.capeb71" target="_blank">
+                                    <img src="img/badge_android.png" alt="Badge Play Store" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col col-md-4 my-md-0 my-4">
+                                <a href="https://itunes.apple.com/fr/app/capeb-71/id971652081?mt=8" target="_blank">
+                                    <img src="img/badge_apple.png" alt="Badge App Store" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md text-center">
+                        <img src="img/capeb_app_screen.png" alt="Capeb app screen" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row text-center justify-content-center">
+                <form action="#" method="post" class="my-5 mx-4">
+                    <h4>Besoin d'une présentation rapide par email ? Avec plaisir, saisissez votre email est vous recevrez immédiatement un très joli email.</h4>
+                    <div class="col-md-6 offset-md-3">
+                        <div class="input-group my-5">
+                            <input type="email" id="inputEmail" class="form-control input-email w-50" placeholder="Email" aria-label="Email" aria-describedby="Email" required>
+                            <div class="input-group-append mt-4 mt-md-0 justify-content-center btn-group-email">
+                                <button class="btn btn-email" type="submit" id="btnEmail">Recevoir la présentation</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <footer class="container-fluid p-0">
+            <div class="row text-md-center py-5 col-md-6 offset-md-3 m-0 m-md-auto">
+                <div class="col-5 col-md">
+                    <a href="#" class="social-button-footer icon-facebook" title="Facebook">
+                        <svg aria-hidden="true" class="icon">
+                            <use xlink:href="img/icon_sprite.svg#facebook-logo" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="col col-md slash-footer">/</div>
+
+                <div class="col col-md">
+                    <a href="#" class="social-button-footer icon-twitter" title="Twitter">
+                        <svg aria-hidden="true" class="icon">
+                            <use xlink:href="img/icon_sprite.svg#twitter-black-shape" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="col-1 col-md slash-footer slash-footer-middle">/</div>
+
+                <div class="col-5 col-md mt-4 mt-md-0">
+                    <a href="#" class="social-button-footer icon-mail" title="Email">
+                        <svg aria-hidden="true" class="icon">
+                            <use xlink:href="img/icon_sprite.svg#mail" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="col col-md slash-footer mt-4 mt-md-0">/</div>
+
+                <div class="col col-md mt-4 mt-md-0">
+                    <a href="#" class="social-button-footer icon-flux" title="Flux RSS">
+                        <svg aria-hidden="true" class="icon">
+                            <use xlink:href="img/icon_sprite.svg#internet" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="copyright-footer p-4" id="copyrightFooter">
+                <p class="text-center h4 m-0" id="textFooter">MIW - Yann D © 2019</p>
+            </div>
+        </footer>
+
+        <div class="position-fixed d-flex flex-column btnChangeColor">
+            <button class="btn p-3 bg-white" onclick="changeColorTo()"></button>
+            <button class="btn p-3 bg-warning" onclick="changeColorTo('yellow')"></button>
+            <button class="btn p-3" style="background: #F58D9F;" onclick="changeColorTo('pink')"></button>
+            <button class="btn p-3 btn-success" onclick="changeColorTo('green')"></button>
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script>
+            function changeColorTo(color) {
+                switch (color) {
+                    case "yellow":
+                        $('#colorCSS').replaceWith('<link rel="stylesheet" href="css/style-yellow.css" id="colorCSS">');
+                        break;
+                    case "pink":
+                        $('#colorCSS').replaceWith('<link rel="stylesheet" href="css/style-pink.css" id="colorCSS">');
+                        break;
+                    case "green":
+                        $('#colorCSS').replaceWith('<link rel="stylesheet" href="css/style-green.css" id="colorCSS">');
+                        break;
+                    default:
+                        $('#colorCSS').replaceWith('<link rel="stylesheet" href="css/style.css" id="colorCSS">');
+                        break;
+                }
+            }
+        </script>
+    </body>
+</html>

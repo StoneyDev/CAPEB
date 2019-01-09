@@ -1,0 +1,35 @@
+.bg-section-1 {
+   background: url('../img/background.jpg') no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   background-size: cover;
+   -o-background-size: cover;
+}
+
+.btn-email {
+   background: #008033;
+   font-weight: bold;
+   border: 1px solid #008033;
+   color: #fff;
+
+   &:hover {
+      color: #000;
+   }
+}
+
+.input-email {
+   border: 2px solid #008033;
+}
+
+.btn-group-email {
+   width: 100%;
+
+   @media all and (min-width: $tablets){
+      width: auto;
+   }
+}
+
+.btnChangeColor {
+   top: 60px;
+   right: 0;
+}
